@@ -13,14 +13,14 @@ class ArtistSerializer(serializers.ModelSerializer):
     
     class Meta:
         model = Artist
-        fields = ['id','name', 'nationality', 'dob', 'movement', 'artworks']
+        fields = ['id','name', 'nationality', 'dob', 'movement', 'image', 'artworks']
         
 class LocationSerializer(serializers.ModelSerializer):
     artworks = FullArtworkSerializer(many=True, read_only=True)
 
     class Meta:
         model = Location
-        fields = ['id','name', 'type', 'city', 'country', 'website', 'artworks']
+        fields = ['id','name', 'type', 'city', 'country', 'website', 'image', 'artworks']
         
         
 class ArtworkSerializer(serializers.ModelSerializer):

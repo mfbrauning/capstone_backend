@@ -6,6 +6,7 @@ class Artist(models.Model):
     nationality = models.CharField(max_length=50)
     dob = models.CharField(max_length=50)
     movement = models.CharField(max_length=255)
+    image = models.CharField(max_length=500)
     
     def __str__(self):
         return self.name
@@ -16,6 +17,7 @@ class Location(models.Model):
     city = models.CharField(max_length=50)
     country = models.CharField(max_length=50)
     website = models.CharField(max_length=255)
+    image = models.CharField(max_length=500)
     
     def __str__(self):
         return self.name
@@ -24,8 +26,8 @@ class Artwork(models.Model):
     title = models.CharField(max_length=50)
     artist = models.ForeignKey(Artist, on_delete=models.SET_NULL, null=True, related_name='artworks')
     year = models.IntegerField()
-    medium = models.CharField(max_length=50)
-    image = models.CharField(max_length=255)
+    medium = models.CharField(max_length=255)
+    image = models.CharField(max_length=500)
     location = models.ForeignKey(Location, on_delete=models.SET_NULL, null=True, related_name='artworks')
     
     
