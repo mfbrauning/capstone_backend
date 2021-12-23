@@ -3,7 +3,7 @@
 
 ## Project Summary
 
-A web app where a user can create an inventory of historical artworks, their artists, and locations to keep track of art they are interested in and where to visit to view the art.
+A web app where a user can create an catalog of historical artworks, their artists, and locations to keep track of art they are interested in and where to visit to view the art.
 
 ## Models
 
