@@ -11,7 +11,7 @@ A web app where a user can create an inventory of historical artworks, their art
 - title = models.CharField(max_length=50)
 - artist = models.ForeignKey(Artist)
 - year = models.IntegerField()
-- medium = models.CharField(max_length=50)
+- medium = models.CharField(max_length=255)
 - image = models.CharField(max_length=255)
 - location = models.ForeignKey(Location)
 
@@ -20,6 +20,7 @@ A web app where a user can create an inventory of historical artworks, their art
 - nationality = models.CharField(max_length=50)
 - dob = models.CharField(max_length=50)
 - movement = models.CharField(max_length=255)
+- image = models.CharField(max_length=500)
 
 ### Location
 - name = models.CharField(max_length=50)
@@ -27,6 +28,7 @@ A web app where a user can create an inventory of historical artworks, their art
 - city = models.CharField(max_length=50)
 - country = models.CharField(max_length=50)
 - website = models.CharField(max_length=255)
+- image = models.CharField(max_length=500)
 
 ## Route Table
 
@@ -55,12 +57,12 @@ List your routes in a table
 - As a user I can edit an artwork
 - As a user I can delete an artwork
 - As a user I can see a list of artists
-- As a user I can click on an artist and see a page with the artist information and list of artworks by   the artist
+- As a user I can click on an artist and see a page with the artist information and list of artworks by the artist
 - As a user I can add a new artist
 - As a user I can edit an artist
 - As a user I can delete an artist
 - As a user I can see a list of museums/galleries
-- As a user I can click on a museum/gallery and see a page with the museum/gallery information
+- As a user I can click on a museum/gallery and see a page with the museum/gallery information and a list of artworks located in the museum/gallery
 - As a user I can add a new museum/gallery
 - As a user I can edit a museum/gallery
 - As a user I can delete a museum/gallery
