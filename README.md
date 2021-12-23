@@ -35,15 +35,15 @@ List your routes in a table
 | url | method | action |
 |-----|--------|--------|
 | /artworks | GET | get all artworks (index) |
-| /artworks | POST | add an artwork (create)|
-| /artworks/:id | PUT | update an artwork (update)|
-| /artworks/:id | DELETE | delete an artwork (destroy)|
-| /artists | GET | get all artists (index) |
-| /artists | POST | add an artist (create)|
+| /artworksedit/ | POST | add an artwork (create)|
+| /artworksedit/:id | PUT | update an artwork (update)|
+| /artworksedit/:id | DELETE | delete an artwork (destroy)|
+| /artists/ | GET | get all artists (index) |
+| /artists/ | POST | add an artist (create)|
 | /artists/:id | PUT | update an artist (update)|
 | /artists/:id | DELETE | delete an artist (destroy)|
-| /locations | GET | get all locations (index) |
-| /locations | POST | add a location (create)|
+| /locations/ | GET | get all locations (index) |
+| /locations/ | POST | add a location (create)|
 | /locations/:id | PUT | update a location (update)|
 | /locations/:id | DELETE | delete a location (destroy)|
 
@@ -135,3 +135,13 @@ List your routes in a table
 - CSS
 - HTML
 - ReactJS
+
+## Challenges
+
+The main challenge I had while working on this project was getting all my models set up and being able to view the nested data within my artworks API while also being able to add and update information. My solution to this was creating a view class and serializer for the sole purpose of reading the nested data, separate from the views and serializers for adding, updating, and deleting.
+
+## Reference
+
+<a href="https://docs.djangoproject.com/en/4.0/" alt="django documentation">Django Documentation</a>
+<br/>
+<a href="https://www.django-rest-framework.org/" alt="django rest framework documentation">Django Rest Framework Documentation</a>
