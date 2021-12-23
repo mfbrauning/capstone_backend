@@ -32,8 +32,6 @@ A web app where a user can create an inventory of historical artworks, their art
 
 ## Route Table
 
-List your routes in a table
-
 | url | method | action |
 |-----|--------|--------|
 | /artworks | GET | get all artworks (index) |
