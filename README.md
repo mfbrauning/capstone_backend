@@ -6,6 +6,7 @@
 A web app where a user can create an catalog of historical artworks, their artists, and locations to keep track of art they are interested in and where to visit to view the art.
 
 <a href="https://github.com/mfbrauning/capstone_frontend">Frontend Repo</a>
+<br/>
 <a href="https://capstone-frontend-gray.vercel.app/">Live Link</a>
 
 ## Models
